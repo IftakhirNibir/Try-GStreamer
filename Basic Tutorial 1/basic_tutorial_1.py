@@ -18,6 +18,7 @@ message = None
 Gst.init(sys.argv[1:])
 
 # build the pipeline
+# A chain of steps (elements) that process media (like video/audio)
 pipeline = Gst.parse_launch(
     "playbin uri=https://gstreamer.freedesktop.org/data/media/sintel_trailer-480p.webm"
 )
